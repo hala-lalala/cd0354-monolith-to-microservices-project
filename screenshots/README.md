@@ -23,3 +23,11 @@ kubectl describe hpa
 ```bash
 kubectl logs {pod_name}
 ```
+
+
+
+
+
+###### issue
+Why I can't have a travis with free credits. i cannot do the travis part. but i add screenshot of the request being triggered
+but getting block. what can i do?
