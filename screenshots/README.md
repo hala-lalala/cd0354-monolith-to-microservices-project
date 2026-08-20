@@ -1,33 +1,6 @@
-# Screenshots
-To help review your infrastructure, please include the following screenshots in this directory::
+#### Note to the Reviewer
+The pipeline I used is GitHub Actions because I was unable to obtain free credits from Travis CI.
+I also encountered the same issue with CircleCI, so I proceeded with GitHub Actions instead, as advised by the reviewer.
+I have also attached all the required screenshots for each folder.
 
-## Deployment Pipeline
-* DockerHub showing containers that you have pushed
-* GitHub repository’s settings showing your Travis webhook (can be found in Settings - Webhook)
-* Travis CI showing a successful build and deploy job
-
-## Kubernetes
-* To verify Kubernetes pods are deployed properly
-```bash
-kubectl get pods
-```
-* To verify Kubernetes services are properly set up
-```bash
-kubectl describe services
-```
-* To verify that you have horizontal scaling set against CPU usage
-```bash
-kubectl describe hpa
-```
-* To verify that you have set up logging with a backend application
-```bash
-kubectl logs {pod_name}
-```
-
-
-
-
-
-###### issue
-Why I can't have a travis with free credits. i cannot do the travis part. but i add screenshot of the request being triggered
-but getting block. i already created a new github twice, nothing happens, what can i do?
+Thank you.
