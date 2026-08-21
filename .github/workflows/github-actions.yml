@@ -25,17 +25,17 @@ jobs:
 
       - name: Tag Docker images
         run: |
-          docker tag udagram-api-feed halalalala/udagram-api-feed:v1
-          docker tag udagram-api-user halalalala/udagram-api-user:v1
-          docker tag udagram-frontend halalalala/udagram-frontend:v1
-          docker tag reverseproxy halalalala/reverseproxy:v1
+          docker tag udagram-api-feed halalalala/udagram-api-feed:v2
+          docker tag udagram-api-user halalalala/udagram-api-user:v2
+          docker tag udagram-frontend halalalala/udagram-frontend:v2
+          docker tag reverseproxy halalalala/reverseproxy:v2
 
       - name: Login to Docker Hub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Push Docker images
         run: |
-          docker push halalalala/udagram-api-feed:v1
-          docker push halalalala/udagram-api-user:v1
-          docker push halalalala/udagram-frontend:v1
-          docker push halalalala/reverseproxy:v1
+          docker push halalalala/udagram-api-feed:v2
+          docker push halalalala/udagram-api-user:v2
+          docker push halalalala/udagram-frontend:v2
+          docker push halalalala/reverseproxy:v2

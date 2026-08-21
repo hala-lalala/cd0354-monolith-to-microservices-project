@@ -3,9 +3,9 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  POSTGRES_HOST: "db-lesson.chnl8hgbyzva.us-east-1.rds.amazonaws.com"
+  POSTGRES_HOST: "eks-database.cszweokoonih.us-east-1.rds.amazonaws.com"
   POSTGRES_DB: "postgres"
-  AWS_BUCKET: "test-4949207-dev"
+  AWS_BUCKET: "eks-bucket-4949207"
   AWS_REGION: "us-east-1"
   AWS_PROFILE: "lesson-4-profile"
   JWT_SECRET: "testing"
